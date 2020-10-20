@@ -1,6 +1,6 @@
-@article{hu2020multilingual,
-  title={Multilingual Jointly Trained Acoustic and Written Word Embeddings},
-  author={Hu, Yushi and Settle, Shane and Livescu, Karen},
-  journal={arXiv preprint arXiv:2006.14007},
-  year={2020}
+@inproceedings{hu2020multilingual,
+    title={Multilingual Jointly Trained Acoustic and Written Word Embeddings},
+    author={Yushi Hu and Shane Settle and Karen Livescu},
+    year={2020},
+    booktitle=interspeech
 }
