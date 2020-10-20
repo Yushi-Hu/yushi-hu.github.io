@@ -20,7 +20,7 @@ title                    : "Yushi Hu"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Yushi Hu"
-description              : "Undergrad @ UChicago"
+description              : # description
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Yushi Hu"
   avatar           : "images/bio.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "undergrad @ UChicago"
+  bio              : " " # descrption
   location         : "Chicago, IL"
   email            :
   links:
