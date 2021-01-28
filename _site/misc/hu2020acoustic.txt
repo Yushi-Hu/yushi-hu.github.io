@@ -1,0 +1,8 @@
+@misc{hu2020acoustic,
+      title={Acoustic span embeddings for multilingual query-by-example search},
+      author={Yushi Hu and Shane Settle and Karen Livescu},
+      year={2020},
+      eprint={2011.11807},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
