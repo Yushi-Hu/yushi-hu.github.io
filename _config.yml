@@ -94,14 +94,14 @@ analytics:
 # Site Author
 author:
   name             : "Yushi Hu 胡雨石"
-  avatar           : "images/bio.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "images/bio.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : " " # descrption
-  location         : "Chicago, IL"
+  location         : "Seattle, WA"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:hys98@uchicago.edu"
+      url: "mailto:yushihu@uw.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://yushi-hu.github.io"
@@ -117,6 +117,12 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=mXN51X0AAAAJ&hl=en&authuser=1"
+    - label: "CV"
+      icon: "fas fa-fw fa-link"
+      url: "misc/CV.pdf"
 
 # Site Footer
 footer:
