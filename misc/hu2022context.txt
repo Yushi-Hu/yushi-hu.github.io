@@ -1,0 +1,6 @@
+@article{hu2022context,
+  title={In-Context Learning for Few-Shot Dialogue State Tracking},
+  author={Hu, Yushi and Lee, Chia-Hsuan and Xie, Tianbao and Yu, Tao and Smith, Noah A and Ostendorf, Mari},
+  journal={arXiv preprint arXiv:2203.08568},
+  year={2022}
+}
