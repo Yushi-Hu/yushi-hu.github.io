@@ -5,4 +5,4 @@ permalink: /Research/
 author_profile: true
 ---
 
-I have done a lot of research haha.
+My main research is on the intersection of natual language processing (NLP), computer vision (CV), and speech.
