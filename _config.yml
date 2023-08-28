@@ -99,6 +99,12 @@ author:
   location         : "Seattle, WA"
   email            :
   links:
+    - label: "Semantic Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://www.semanticscholar.org/author/Yushi-Hu/2112209725"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=mXN51X0AAAAJ&hl=en&authuser=1"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:yushihu@uw.edu"
@@ -107,7 +113,7 @@ author:
       url: "https://yushi-hu.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/huyushi98?lang=en"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -117,15 +123,12 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label: "Google Scholar"
-      icon: "fas fa-fw fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=mXN51X0AAAAJ&hl=en&authuser=1"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/yushi-hu/"
-    - label: "CV"
-      icon: "fas fa-fw fa-file-pdf"
-      url: "misc/CV.pdf"
+    # - label: "CV"
+    #   icon: "fas fa-fw fa-file-pdf"
+    #   url: "misc/CV.pdf"
 
 # Site Footer
 footer:
