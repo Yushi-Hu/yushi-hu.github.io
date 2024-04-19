@@ -9,6 +9,45 @@
  <meta name="google-site-verification" content="aAp-Ld0edambtgXw0_fF0tHhvll7gRpY4EOCXBkU7fM">
  <meta name="keywords" content="Yushi Hu, yushi hu, yushihu">
  <style>
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+
  p.xsmall {
      line-height: 1.55;
      font-size: 9.5pt;
@@ -73,6 +112,10 @@ and Prof. <a href="http://info.phys.tsinghua.edu.cn/henucl/ning.htm" style="colo
  <p>
 
 
+
+
+
+
  <h3 style="font-weight: 500">Publications</h3>
 <span style="font-size: 10pt">Most recent publications on <a href="https://www.semanticscholar.org/author/Yushi-Hu/2112209725"
     style="color: #285095; text-decoration: none">Semantic Scholar</a> and <a
@@ -82,195 +125,381 @@ and Prof. <a href="http://info.phys.tsinghua.edu.cn/henucl/ning.htm" style="colo
 <span style="font-size: 10pt">* indicates equal contribution</span>
  <hr>
 
-<p class="small">
-    <span style="font-weight:800"> <a href="https://arxiv.org/abs/2312.03052"
-            style="font-size: 12pt; color: #285095; text-decoration: none"> Visual Program Distillation:
-            Distilling Tools and Programmatic Reasoning into Vision-Language Models </a> <br> </span>
-    <span style="line-height:170%"> <b>Yushi Hu</b>, Otilia Stretcu, Chun-Ta Lu, Krishnamurthy Viswanathan, Kenji Hata, Enming Luo, Ranjay Krishna, Ariel Fuxman</span>
-    <br>
-    <span style="line-height:170%"> <i>CVPR 2024 <span style="color: red">Oral</span></i> </span>
-    <br>
-    [<a href="https://arxiv.org/abs/2312.03052" style="color: #285095; text-decoration: none">paper</a>]
-    [<a href="https://visual-program-distillation.github.io/" style="color: #285095; text-decoration: none">project page</a>]
-
-    <br>
-    <span style="font-size: 10pt">TLDR: Using LLM-generated codes + vision tools to generate high-quality multimodal chain-of-thought reasoning data for large multimodal model (LMM) training.
-        The resulting models, PaLI-3-VPD (5B) and PaLI-X-VPD (55B) set the new SOTA for many existing vision-Language tasks.
-    </span>
 
 
-<p class="small">
-    <span style="font-weight:800"> <a href="https://arxiv.org/abs/2311.17946"
-            style="font-size: 12pt; color: #285095; text-decoration: none"> DreamSync: Aligning Text-to-Image Generation with Image Understanding Feedback </a> <br> </span>
-    <span style="line-height:170%"> Jiao Sun*, Deqing Fu*, <b>Yushi Hu*</b>, Su Wang, Royi Rassin, Da-Cheng Juan, Dana Alon, Charles Herrmann, Sjoerd van Steenkiste, Ranjay Krishna, Cyrus
-    Rashtchian</span>
-    <br>
-    <span style="line-height:170%"> <i>Preprint 2023</i> </span>
-    <br>
-    [<a href="https://arxiv.org/abs/2311.17946" style="color: #285095; text-decoration: none">paper</a>]
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks"  id="defaultOpen" onclick="openTab(event, 'Selected')">Selected Publications</button>
+    <button class="tablinks" onclick="openTab(event, 'All')">All Publications</button>
+</div>
 
-    <br>
-    <span style="font-size: 10pt">TLDR: Using TIFA as the reward model for text-to-image generation models. Improve the text-to-image faithfulness and image aesthetics with simple rejection-sampling fine-tuning.</span>
+<!-- Tab content for Selected Publications -->
+<div id="Selected" class="tabcontent">
+    <h3>Selected Publications</h3>
 
-<p class="small">
-    <span style="font-weight:800"> <a href="https://arxiv.org/abs/2310.18235"
-            style="font-size: 12pt; color: #285095; text-decoration: none"> Davidsonian Scene Graph: Improving Reliability in Fine-Grained Evaluation for Text-Image Generation </a> <br> </span>
-    <span style="line-height:170%"> Jaemin Cho, <b>Yushi Hu</b>, Roopal Garg, Peter Anderson, Ranjay Krishna, Jason Baldridge, Mohit Bansal, Jordi Pont-Tuset, Su Wang</span>
-    <br>
-    <span style="line-height:170%"> <i>ICLR 2024</i> </span>
-    <br>
-    [<a href="https://arxiv.org/abs/2310.18235" style="color: #285095; text-decoration: none">paper</a>]
-    [<a href="https://google.github.io/dsg/" style="color: #285095; text-decoration: none">project page</a>]
-    [<a href="https://github.com/j-min/DSG" style="color: #285095; text-decoration: none">code & data</a>]
-    <br>
-    <span style="font-size: 10pt">TLDR: An improved and more reliable version of TIFA for text-to-image evaluation, based on Davidsonian semantics and scene graphs.</span>
+    <h4>Better Evaluations for Multimodal Generative Models</h4>
 
-<p class="small">
-    <span style="font-weight:800"> <a href="https://arxiv.org/abs/2306.01693"
-            style="font-size: 12pt; color: #285095; text-decoration: none"> Fine-Grained Human Feedback Gives Better Rewards for Language Model Training </a> <br> </span>
-    <span style="line-height:170%"> Zeqiu Wu*, <b>Yushi Hu*</b>, Weijia Shi, Nouha Dziri, Alane Suhr, Prithviraj Ammanabrolu, Noah A. Smith, Mari Ostendorf, Hannaneh Hajishirzi</span>
-    <br>
-    <span style="line-height:170%"> <i>NeurIPS 2023 <span style="color: red">(Spotlight)</span></i> </span>
-    <br>
-    [<a href="https://arxiv.org/abs/2306.01693" style="color: #285095; text-decoration: none">paper</a>]
-    [<a href="https://FineGrainedRLHF.github.io/" style="color: #285095; text-decoration: none">project page</a>]
-    [<a href="https://github.com/allenai/FineGrainedRLHF" style="color: #285095; text-decoration: none">code & data</a>]
-    <br>
-    <span style="font-size: 10pt">TLDR: F in current RLHF is overall preference, which conveys limited information. We introduce Fine-Grained RLHF and train LMs with explicit feedback like "sentence 1 is not factual", "sentence 2 is
-    toxic". We show that Fine-Grained RLHF is more effective and enables customizing LMs for specific needs.</span>
-
-
-<p class="small">
-    <span style="font-weight:800"> <a href="https://arxiv.org/abs/2303.11897"
-            style="font-size: 12pt; color: #285095; text-decoration: none"> TIFA: Accurate and Interpretable Text-to-Image Faithfulness Evaluation with Question Answering </a> <br> </span>
-    <span style="line-height:170%"> <b>Yushi Hu</b>, Benlin Liu, Jungo Kasai, Yizhong Wang, Mari Ostendorf, Ranjay Krishna, Noah A. Smith</span>
-    <br>
-    <span style="line-height:170%"> <i>ICCV 2023</i> </span>
-    <br>
-    [<a href="https://arxiv.org/abs/2303.11897" style="color: #285095; text-decoration: none">paper</a>]
-    [<a href="https://tifa-benchmark.github.io/" style="color: #285095; text-decoration: none">project page</a>]
-    [<a href="https://github.com/Yushi-Hu/tifa"
-        style="color: #285095; text-decoration: none">code & data</a>]
-    [<a href="../misc/TIFA_poster_new.pdf" style="color: #285095; text-decoration: none">poster</a>]
-    <br>
-    <span style="font-size: 10pt">TLDR: Fine-grained and accurate evaluation of synthesized images using Image-to-Text Models (e.g. GPT-4, BLIP-2, etc.) and Large Language Models (e.g. GPT-3.5). More accurate than CLIP!</span>
-
-
-<p class="small">
-    <span style="font-weight:800"> <a href="https://arxiv.org/abs/2211.09699"
-            style="font-size: 12pt; color: #285095; text-decoration: none"> PromptCap: Prompt-Guided Task-Aware Image Captioning </a> <br> </span>
-    <span style="line-height:170%"> <b>Yushi Hu*</b>, Hang Hua*, Zhengyuan Yang, Weijia Shi, Noah A. Smith, Jiebo Luo</span>
-    <br>
-    <span style="line-height:170%"> <i>ICCV 2023</i> </span>
-    <br>
-    [<a href="https://arxiv.org/abs/2211.09699" style="color: #285095; text-decoration: none">paper</a>][<a href="https://yushi-hu.github.io/promptcap_demo/" style="color: #285095; text-decoration: none">project page</a>]
-    [<a href="https://huggingface.co/tifa-benchmark/promptcap-coco-vqa" style="color: #285095; text-decoration: none">Huggingface Checkpoint</a>]
-    [<a href="../misc/Promptcap poster.pdf"
-        style="color: #285095; text-decoration: none">poster</a>]
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2404.1239"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> BLINK: Multimodal Large Language Models Can See but Not Percieve </a> <br> </span>
+        <span style="line-height:170%"> Xingyu Fu*, <b>Yushi Hu*</b>, Bangzheng Li, Yu Feng, Haoyu Wang, Xudong Lin, Dan Roth, Noah A. Smith, Wei-Chiu Ma, Ranjay Krishna</span>
         <br>
-        <span style="font-size: 10pt">TLDR: A captioning model that is controlled by natural language instruction. Simple and effective visual frontend for LLMs like GPT-3 and ChatGPT.</span>
+        <span style="line-height:170%"> <i>preprint</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2404.12390" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://zeyofu.github.io/blink/" style="color: #285095; text-decoration: none">project page</a>]
+        [<a href="https://github.com/zeyofu/BLINK_Benchmark" style="color: #285095; text-decoration: none">code</a>]
+        [<a href="https://huggingface.co/datasets/BLINK-Benchmark/BLINK" style="color: #285095; text-decoration: none">HF data</a>]
 
 
-<p class="small">
-    <span style="font-weight:800"> <a href="https://arxiv.org/abs/2212.09741"
-            style="font-size: 12pt; color: #285095; text-decoration: none"> One Embedder, Any Task:
-            Instruction-Finetuned Text Embeddings </a> <br> </span>
-    <span style="line-height:170%"> Hongjin Su*, Weijia Shi*, Jungo Kasai, Yizhong Wang, <b>Yushi Hu</b>, Mari
-        Ostendorf, Wen-tau Yih, Noah A. Smith, Luke
-        Zettlemoyer, Tao Yu</span>
-    <br>
-    <span style="line-height:170%"> <i>ACL 2023</i> </span>
-    <br>
-    [<a href="https://arxiv.org/abs/2212.09741" style="color: #285095; text-decoration: none">paper</a>]
-    [<a href="https://instructor-embedding.github.io/" style="color: #285095; text-decoration: none">project page</a>]
-    [<a href="https://huggingface.co/hkunlp/instructor-large"
-        style="color: #285095; text-decoration: none">checkpoint</a>]
-    <br>
-    <span style="font-size: 10pt">TLDR: Instruction-finetuned text embeddings. The SOTA embedding for retrieval,
-        semantic similarity, etc. Open-source, and better than OpenAI embeddings!</span>
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2303.11897"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> TIFA: Accurate and Interpretable
+                Text-to-Image Faithfulness Evaluation with Question Answering </a> <br> </span>
+        <span style="line-height:170%"> <b>Yushi Hu</b>, Benlin Liu, Jungo Kasai, Yizhong Wang, Mari Ostendorf, Ranjay
+            Krishna, Noah A. Smith</span>
+        <br>
+        <span style="line-height:170%"> <i>ICCV 2023</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2303.11897" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://tifa-benchmark.github.io/" style="color: #285095; text-decoration: none">project page</a>]
+        [<a href="https://github.com/Yushi-Hu/tifa" style="color: #285095; text-decoration: none">code & data</a>]
+        [<a href="../misc/TIFA_poster_new.pdf" style="color: #285095; text-decoration: none">poster</a>]
+
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2310.18235"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> Davidsonian Scene Graph: Improving
+                Reliability in Fine-Grained Evaluation for Text-Image Generation </a> <br> </span>
+        <span style="line-height:170%"> Jaemin Cho, <b>Yushi Hu</b>, Roopal Garg, Peter Anderson, Ranjay Krishna, Jason
+            Baldridge, Mohit Bansal, Jordi Pont-Tuset, Su Wang</span>
+        <br>
+        <span style="line-height:170%"> <i>ICLR 2024</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2310.18235" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://google.github.io/dsg/" style="color: #285095; text-decoration: none">project page</a>]
+        [<a href="https://github.com/j-min/DSG" style="color: #285095; text-decoration: none">code & data</a>]
 
 
-<p class="small">
-    <span style="font-weight:800"> <a href="https://arxiv.org/abs/2210.02875"
-            style="font-size: 12pt; color: #285095; text-decoration: none"> Binding Language Models in Symbolic Languages </a> <br> </span>
-    <span style="line-height:170%"> Zhoujun Cheng*, Tianbao Xie*, Peng Shi, Chengzu Li, Rahul Nadkarni, <b>Yushi Hu</b>, Caiming Xiong, Dragomir Radev, Mari Ostendorf, Luke Zettlemoyer, Noah A Smith, Tao Yu</span>
-    <br>
-    <span style="line-height:170%"> <i>ICLR 2023 <span style="color: red">(Spotlight)</span></i> </span>
-    <br>
-    [<a href="https://arxiv.org/abs/2210.02875" style="color: #285095; text-decoration: none">paper</a>][<a href="https://lm-code-binder.github.io/" style="color: #285095; text-decoration: none">project page</a>]
-    <br>
-    <span style="font-size: 10pt">TLDR: Combining GPT-3 with Python and SQL. Proposes the concept of Toolformer and ChatGPT plugins.</span>
+    <h4>Improving Multimodal Models with Better Supervision</h4>
+
+        <p class="small">
+            <span style="font-weight:800"> <a href="https://arxiv.org/abs/2312.03052"
+                    style="font-size: 12pt; color: #285095; text-decoration: none"> Visual Program Distillation:
+                    Distilling Tools and Programmatic Reasoning into Vision-Language Models </a> <br> </span>
+            <span style="line-height:170%"> <b>Yushi Hu</b>, Otilia Stretcu, Chun-Ta Lu, Krishnamurthy Viswanathan, Kenji Hata,
+                Enming Luo, Ranjay Krishna, Ariel Fuxman</span>
+            <br>
+            <span style="line-height:170%"> <i>CVPR 2024 <span style="color: red">(Oral)</span></i> </span>
+            <br>
+            [<a href="https://arxiv.org/abs/2312.03052" style="color: #285095; text-decoration: none">paper</a>]
+            [<a href="https://visual-program-distillation.github.io/" style="color: #285095; text-decoration: none">project
+                page</a>]
+    
+        <p class="small">
+            <span style="font-weight:800"> <a href="https://arxiv.org/abs/2306.01693"
+                    style="font-size: 12pt; color: #285095; text-decoration: none"> Fine-Grained Human Feedback Gives Better
+                    Rewards for Language Model Training </a> <br> </span>
+            <span style="line-height:170%"> Zeqiu Wu*, <b>Yushi Hu*</b>, Weijia Shi, Nouha Dziri, Alane Suhr, Prithviraj
+                Ammanabrolu, Noah A. Smith, Mari Ostendorf, Hannaneh Hajishirzi</span>
+            <br>
+            <span style="line-height:170%"> <i>NeurIPS 2023 <span style="color: red">(Spotlight)</span></i> </span>
+            <br>
+            [<a href="https://arxiv.org/abs/2306.01693" style="color: #285095; text-decoration: none">paper</a>]
+            [<a href="https://FineGrainedRLHF.github.io/" style="color: #285095; text-decoration: none">project page</a>]
+            [<a href="https://github.com/allenai/FineGrainedRLHF" style="color: #285095; text-decoration: none">code & data</a>]
 
 
-<p class="small">
-    <span style="font-weight:800"> <a href="https://arxiv.org/abs/2205.12244"
-            style="font-size: 12pt; color: #285095; text-decoration: none"> Unsupervised Learning of Hierarchical Conversation Structure </a> <br> </span>
-    <span style="line-height:170%"> Bo-Ru Lu, <b>Yushi Hu</b>, Hao Cheng, Noah A. Smith, Mari Ostendorf</span>
-    <br>
-    <span style="line-height:170%"> <i>EMNLP 2022</i> </span>
-    <br>
-    [<a href="https://arxiv.org/abs/2205.12244" style="color: #285095; text-decoration: none">paper</a>]
-    <br>
-    <span style="font-size: 10pt">TLDR: Learning the common dialogue structure from a huge amount of customer-service dialogues.</span>
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2311.17946"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> DreamSync: Aligning Text-to-Image Generation
+                with Image Understanding Feedback </a> <br> </span>
+        <span style="line-height:170%"> Jiao Sun*, Deqing Fu*, <b>Yushi Hu*</b>, Su Wang, Royi Rassin, Da-Cheng Juan, Dana
+            Alon, Charles Herrmann, Sjoerd van Steenkiste, Ranjay Krishna, Cyrus
+            Rashtchian</span>
+        <br>
+        <span style="line-height:170%"> <i>Preprint 2023</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2311.17946" style="color: #285095; text-decoration: none">paper</a>]
+    
+    
 
+</div>
 
-<p class="small">
-    <span style="font-weight:800"> <a href="https://arxiv.org/abs/2203.08568"
-            style="font-size: 12pt; color: #285095; text-decoration: none"> In-Context Learning for Few-Shot Dialogue State Tracking </a> <br> </span>
-    <span style="line-height:170%"> <b>Yushi Hu</b>, Chia-Hsuan Lee, Tianbao Xie, Tao Yu, Noah A. Smith, Mari Ostendorf</span>
-    <br>
-    <span style="line-height:170%"> <i>EMNLP 2022</i> </span>
-    <br>
-    [<a href="https://arxiv.org/abs/2203.08568" style="color: #285095; text-decoration: none">paper</a>] [<a
-        href="https://github.com/Yushi-Hu/IC-DST" style="color: #285095; text-decoration: none">code</a>] [<a
-        href="../misc/hu2022context.txt" style="color: #285095; text-decoration: none">bibtex</a>]
-    <span style="font-size: 10pt">
-    <br>    
-    TLDR: The first paper that shows GPT-3 is surprisingly good at dialogue understanding tasks.</span>
+<!-- Tab content for All Publications -->
+<div id="All" class="tabcontent">
+    <h3>All Publications</h3>
 
+        <p class="small">
+            <span style="font-weight:800"> <a href="https://arxiv.org/abs/2404.1239"
+                    style="font-size: 12pt; color: #285095; text-decoration: none"> BLINK: Multimodal Large Language Models Can
+                    See but Not Percieve </a> <br> </span>
+            <span style="line-height:170%"> Xingyu Fu*, <b>Yushi Hu*</b>, Bangzheng Li, Yu Feng, Haoyu Wang, Xudong Lin, Dan
+                Roth, Noah A. Smith, Wei-Chiu Ma, Ranjay Krishna</span>
+            <br>
+            <span style="line-height:170%"> <i>preprint</i> </span>
+            <br>
+            [<a href="https://arxiv.org/abs/2404.12390" style="color: #285095; text-decoration: none">paper</a>]
+            [<a href="https://zeyofu.github.io/blink/" style="color: #285095; text-decoration: none">project page</a>]
+            [<a href="https://github.com/zeyofu/BLINK_Benchmark" style="color: #285095; text-decoration: none">code</a>]
+            [<a href="https://huggingface.co/datasets/BLINK-Benchmark/BLINK" style="color: #285095; text-decoration: none">HF
+                data</a>]
 
- <p class="small">
- <span style="font-weight:800"> <a href="https://arxiv.org/abs/2011.11807" style="font-size: 12pt; color: #285095; text-decoration: none"> Acoustic Span Embeddings for Multilingual Query-by-Example Search </a> <br> </span>
- <span style="line-height:170%"> <b>Yushi Hu</b>, Shane Settle, Karen Livescu</span>
- <br>
- <span style="line-height:170%"> <i>IEEE Spoken Language Technology Workshop (SLT 2021)</i> </span>
- <br>
- [<a href="https://arxiv.org/abs/2011.11807" style="color: #285095; text-decoration: none">paper</a>] 
- [<a href="https://github.com/Yushi-Hu/Query-by-Example" style="color: #285095; text-decoration: none">code</a>] 
- [<a href="../misc/hu2020acoustic.txt" style="color: #285095; text-decoration: none">bibtex</a>]
- [<a href="../misc/huslt2021presentation.pdf" style="color: #285095; text-decoration: none">slides</a>]
+            <br>
+            <span style="font-size: 10pt">TLDR: We introduce Blink, a new benchmark for multimodal language models (LLMs) that focuses on core visual perception
+            abilities not found in other evaluations.
+            </span>
 
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2312.03052"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> Visual Program Distillation:
+                Distilling Tools and Programmatic Reasoning into Vision-Language Models </a> <br> </span>
+        <span style="line-height:170%"> <b>Yushi Hu</b>, Otilia Stretcu, Chun-Ta Lu, Krishnamurthy Viswanathan, Kenji Hata,
+            Enming Luo, Ranjay Krishna, Ariel Fuxman</span>
+        <br>
+        <span style="line-height:170%"> <i>CVPR 2024 <span style="color: red">Oral</span></i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2312.03052" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://visual-program-distillation.github.io/" style="color: #285095; text-decoration: none">project
+            page</a>]
+    
+        <br>
+        <span style="font-size: 10pt">TLDR: Using LLM-generated codes + vision tools to generate high-quality multimodal
+            chain-of-thought reasoning data for large multimodal model (LMM) training.
+            The resulting models, PaLI-3-VPD (5B) and PaLI-X-VPD (55B) set the new SOTA for many existing vision-Language
+            tasks.
+        </span>
+    
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2311.17946"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> DreamSync: Aligning Text-to-Image Generation
+                with Image Understanding Feedback </a> <br> </span>
+        <span style="line-height:170%"> Jiao Sun*, Deqing Fu*, <b>Yushi Hu*</b>, Su Wang, Royi Rassin, Da-Cheng Juan, Dana
+            Alon, Charles Herrmann, Sjoerd van Steenkiste, Ranjay Krishna, Cyrus
+            Rashtchian</span>
+        <br>
+        <span style="line-height:170%"> <i>Preprint 2023</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2311.17946" style="color: #285095; text-decoration: none">paper</a>]
+    
+        <br>
+        <span style="font-size: 10pt">TLDR: Using TIFA as the reward model for text-to-image generation models. Improve the
+            text-to-image faithfulness and image aesthetics with simple rejection-sampling fine-tuning.</span>
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2310.18235"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> Davidsonian Scene Graph: Improving
+                Reliability in Fine-Grained Evaluation for Text-Image Generation </a> <br> </span>
+        <span style="line-height:170%"> Jaemin Cho, <b>Yushi Hu</b>, Roopal Garg, Peter Anderson, Ranjay Krishna, Jason
+            Baldridge, Mohit Bansal, Jordi Pont-Tuset, Su Wang</span>
+        <br>
+        <span style="line-height:170%"> <i>ICLR 2024</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2310.18235" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://google.github.io/dsg/" style="color: #285095; text-decoration: none">project page</a>]
+        [<a href="https://github.com/j-min/DSG" style="color: #285095; text-decoration: none">code & data</a>]
+        <br>
+        <span style="font-size: 10pt">TLDR: An improved and more reliable version of TIFA for text-to-image evaluation,
+            based on Davidsonian semantics and scene graphs.</span>
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2306.01693"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> Fine-Grained Human Feedback Gives Better
+                Rewards for Language Model Training </a> <br> </span>
+        <span style="line-height:170%"> Zeqiu Wu*, <b>Yushi Hu*</b>, Weijia Shi, Nouha Dziri, Alane Suhr, Prithviraj
+            Ammanabrolu, Noah A. Smith, Mari Ostendorf, Hannaneh Hajishirzi</span>
+        <br>
+        <span style="line-height:170%"> <i>NeurIPS 2023 <span style="color: red">(Spotlight)</span></i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2306.01693" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://FineGrainedRLHF.github.io/" style="color: #285095; text-decoration: none">project page</a>]
+        [<a href="https://github.com/allenai/FineGrainedRLHF" style="color: #285095; text-decoration: none">code & data</a>]
+        <br>
+        <span style="font-size: 10pt">TLDR: F in current RLHF is overall preference, which conveys limited information. We
+            introduce Fine-Grained RLHF and train LMs with explicit feedback like "sentence 1 is not factual", "sentence 2
+            is
+            toxic". We show that Fine-Grained RLHF is more effective and enables customizing LMs for specific needs.</span>
+    
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2303.11897"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> TIFA: Accurate and Interpretable
+                Text-to-Image Faithfulness Evaluation with Question Answering </a> <br> </span>
+        <span style="line-height:170%"> <b>Yushi Hu</b>, Benlin Liu, Jungo Kasai, Yizhong Wang, Mari Ostendorf, Ranjay
+            Krishna, Noah A. Smith</span>
+        <br>
+        <span style="line-height:170%"> <i>ICCV 2023</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2303.11897" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://tifa-benchmark.github.io/" style="color: #285095; text-decoration: none">project page</a>]
+        [<a href="https://github.com/Yushi-Hu/tifa" style="color: #285095; text-decoration: none">code & data</a>]
+        [<a href="../misc/TIFA_poster_new.pdf" style="color: #285095; text-decoration: none">poster</a>]
+        <br>
+        <span style="font-size: 10pt">TLDR: Fine-grained and accurate evaluation of synthesized images using Image-to-Text
+            Models (e.g. GPT-4, BLIP-2, etc.) and Large Language Models (e.g. GPT-3.5). More accurate than CLIP!</span>
+    
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2211.09699"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> PromptCap: Prompt-Guided Task-Aware Image
+                Captioning </a> <br> </span>
+        <span style="line-height:170%"> <b>Yushi Hu*</b>, Hang Hua*, Zhengyuan Yang, Weijia Shi, Noah A. Smith, Jiebo
+            Luo</span>
+        <br>
+        <span style="line-height:170%"> <i>ICCV 2023</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2211.09699" style="color: #285095; text-decoration: none">paper</a>][<a
+            href="https://yushi-hu.github.io/promptcap_demo/" style="color: #285095; text-decoration: none">project
+            page</a>]
+        [<a href="https://huggingface.co/tifa-benchmark/promptcap-coco-vqa"
+            style="color: #285095; text-decoration: none">Huggingface Checkpoint</a>]
+        [<a href="../misc/Promptcap poster.pdf" style="color: #285095; text-decoration: none">poster</a>]
+        <br>
+        <span style="font-size: 10pt">TLDR: A captioning model that is controlled by natural language instruction. Simple
+            and effective visual frontend for LLMs like GPT-3 and ChatGPT.</span>
+    
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2212.09741"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> One Embedder, Any Task:
+                Instruction-Finetuned Text Embeddings </a> <br> </span>
+        <span style="line-height:170%"> Hongjin Su*, Weijia Shi*, Jungo Kasai, Yizhong Wang, <b>Yushi Hu</b>, Mari
+            Ostendorf, Wen-tau Yih, Noah A. Smith, Luke
+            Zettlemoyer, Tao Yu</span>
+        <br>
+        <span style="line-height:170%"> <i>ACL 2023</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2212.09741" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://instructor-embedding.github.io/" style="color: #285095; text-decoration: none">project page</a>]
+        [<a href="https://huggingface.co/hkunlp/instructor-large"
+            style="color: #285095; text-decoration: none">checkpoint</a>]
+        <br>
+        <span style="font-size: 10pt">TLDR: Instruction-finetuned text embeddings. The SOTA embedding for retrieval,
+            semantic similarity, etc. Open-source, and better than OpenAI embeddings!</span>
+    
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2210.02875"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> Binding Language Models in Symbolic
+                Languages </a> <br> </span>
+        <span style="line-height:170%"> Zhoujun Cheng*, Tianbao Xie*, Peng Shi, Chengzu Li, Rahul Nadkarni, <b>Yushi Hu</b>,
+            Caiming Xiong, Dragomir Radev, Mari Ostendorf, Luke Zettlemoyer, Noah A Smith, Tao Yu</span>
+        <br>
+        <span style="line-height:170%"> <i>ICLR 2023 <span style="color: red">(Spotlight)</span></i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2210.02875" style="color: #285095; text-decoration: none">paper</a>][<a
+            href="https://lm-code-binder.github.io/" style="color: #285095; text-decoration: none">project page</a>]
+        <br>
+        <span style="font-size: 10pt">TLDR: Combining GPT-3 with Python and SQL. Proposes the concept of Toolformer and
+            ChatGPT plugins.</span>
+    
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2205.12244"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> Unsupervised Learning of Hierarchical
+                Conversation Structure </a> <br> </span>
+        <span style="line-height:170%"> Bo-Ru Lu, <b>Yushi Hu</b>, Hao Cheng, Noah A. Smith, Mari Ostendorf</span>
+        <br>
+        <span style="line-height:170%"> <i>EMNLP 2022</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2205.12244" style="color: #285095; text-decoration: none">paper</a>]
+        <br>
+        <span style="font-size: 10pt">TLDR: Learning the common dialogue structure from a huge amount of customer-service
+            dialogues.</span>
+    
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2203.08568"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> In-Context Learning for Few-Shot Dialogue
+                State Tracking </a> <br> </span>
+        <span style="line-height:170%"> <b>Yushi Hu</b>, Chia-Hsuan Lee, Tianbao Xie, Tao Yu, Noah A. Smith, Mari
+            Ostendorf</span>
+        <br>
+        <span style="line-height:170%"> <i>EMNLP 2022</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2203.08568" style="color: #285095; text-decoration: none">paper</a>] [<a
+            href="https://github.com/Yushi-Hu/IC-DST" style="color: #285095; text-decoration: none">code</a>] [<a
+            href="../misc/hu2022context.txt" style="color: #285095; text-decoration: none">bibtex</a>]
+        <span style="font-size: 10pt">
+            <br>
+            TLDR: The first paper that shows GPT-3 is surprisingly good at dialogue understanding tasks.</span>
+    
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2011.11807"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> Acoustic Span Embeddings for Multilingual
+                Query-by-Example Search </a> <br> </span>
+        <span style="line-height:170%"> <b>Yushi Hu</b>, Shane Settle, Karen Livescu</span>
+        <br>
+        <span style="line-height:170%"> <i>IEEE Spoken Language Technology Workshop (SLT 2021)</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2011.11807" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://github.com/Yushi-Hu/Query-by-Example" style="color: #285095; text-decoration: none">code</a>]
+        [<a href="../misc/hu2020acoustic.txt" style="color: #285095; text-decoration: none">bibtex</a>]
+        [<a href="../misc/huslt2021presentation.pdf" style="color: #285095; text-decoration: none">slides</a>]
+    
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2006.14007"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> Multilingual Jointly Trained Acoustic and
+                Written Word Embeddings </a> <br> </span>
+        <span style="line-height:170%"> <b>Yushi Hu</b>, Shane Settle, Karen Livescu</span>
+        <br>
+        <span style="line-height:170%"> <i>InterSpeech 2020</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2006.14007" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://github.com/Yushi-Hu/Multilingual-AWE" style="color: #285095; text-decoration: none">code</a>]
+        [<a href="../misc/hu2020multilingual.txt" style="color: #285095; text-decoration: none">bibtex</a>]
+        [<a href="../misc/hu2020presentation.pdf" style="color: #285095; text-decoration: none">slides</a>]
+        [<a href="http://www.interspeech2020.org/index.php?m=content&c=index&a=show&catid=273&id=528"
+            style="color: #285095; text-decoration: none">video</a>]
+        [<a href="http://projector.tensorflow.org/?config=https://raw.githubusercontent.com/Yushi-Hu/Multilingual-AWE/master/emb-examples/awe-agwe-config.json"
+            style="color: #285095; text-decoration: none">demo</a>]
+    
+    
+    <p class="small">
+        <span style="font-weight:800"> <a
+                href="https://www.researchgate.net/profile/Sergei-Prokhorenko/publication/354697530_Freestanding_Ferroelectric_Bubble_Domains/links/6149d315a595d06017df3f5b/Freestanding-Ferroelectric-Bubble-Domains.pdf"
+                style="font-size: 12pt; color: #285095; text-decoration: none">Freestanding Ferroelectric Bubble Domains</a>
+            <br> </span>
+        <span style="line-height:170%"> Saidur R Bakaul, Sergei Prokhorenko, Qi Zhang, Yousra Nahas, <b>Yushi Hu</b>, Amanda
+            Petford-Long, Laurent Bellaiche, Nagarajan
+            Valanoor</span>
+        <br>
+        <span style="line-height:170%"> <i>Advanced Materials, 2021</i> </span>
+        <br>
+        [<a href="https://www.researchgate.net/profile/Sergei-Prokhorenko/publication/354697530_Freestanding_Ferroelectric_Bubble_Domains/links/6149d315a595d06017df3f5b/Freestanding-Ferroelectric-Bubble-Domains.pdf"
+            style="color: #285095; text-decoration: none">paper</a>]
+    
+        <!-- <p class="small">
+     <span style="font-weight:800"> <a href="https://arxiv.org/abs/1608.06936" style="font-size: 12pt; color: #285095; text-decoration: none"> A Simple Setup to Measure Muon Lifetime and Electron Energy Spectrum of Muon Decay and its Monte Carlo Simulation</a> <br> </span>
+     <span style="line-height:170%"> <b>Yushi Hu</b>, Tianye Wang, Yefeng Mei, Zhao Zhang, Chuangang Ning</span>
+     <br>
+     <span style="line-height:170%"> <i>物理与工程, 2016.05</i> </span>
+     <br>
+    [<a href="https://arxiv.org/pdf/1608.06936" style="color: #285095; text-decoration: none">English version preprint</a>] -->
 
- <p class="small">
- <span style="font-weight:800"> <a href="https://arxiv.org/abs/2006.14007" style="font-size: 12pt; color: #285095; text-decoration: none"> Multilingual Jointly Trained Acoustic and Written Word Embeddings </a> <br> </span>
- <span style="line-height:170%"> <b>Yushi Hu</b>, Shane Settle, Karen Livescu</span>
- <br>
- <span style="line-height:170%"> <i>InterSpeech 2020</i> </span>
- <br>
- [<a href="https://arxiv.org/abs/2006.14007" style="color: #285095; text-decoration: none">paper</a>]
-  [<a href="https://github.com/Yushi-Hu/Multilingual-AWE" style="color: #285095; text-decoration: none">code</a>] 
-  [<a href="../misc/hu2020multilingual.txt" style="color: #285095; text-decoration: none">bibtex</a>]
-  [<a href="../misc/hu2020presentation.pdf" style="color: #285095; text-decoration: none">slides</a>]
-  [<a href="http://www.interspeech2020.org/index.php?m=content&c=index&a=show&catid=273&id=528" style="color: #285095; text-decoration: none">video</a>]
-  [<a href="http://projector.tensorflow.org/?config=https://raw.githubusercontent.com/Yushi-Hu/Multilingual-AWE/master/emb-examples/awe-agwe-config.json" style="color: #285095; text-decoration: none">demo</a>]
+</div>
 
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
 
- <p class="small">
- <span style="font-weight:800"> <a href="https://www.researchgate.net/profile/Sergei-Prokhorenko/publication/354697530_Freestanding_Ferroelectric_Bubble_Domains/links/6149d315a595d06017df3f5b/Freestanding-Ferroelectric-Bubble-Domains.pdf" style="font-size: 12pt; color: #285095; text-decoration: none">Freestanding Ferroelectric Bubble Domains</a> <br> </span>
- <span style="line-height:170%"> Saidur R Bakaul, Sergei Prokhorenko, Qi Zhang, Yousra Nahas, <b>Yushi Hu</b>, Amanda Petford-Long, Laurent Bellaiche, Nagarajan
-Valanoor</span>
- <br>
- <span style="line-height:170%"> <i>Advanced Materials, 2021</i> </span>
- <br>
-[<a href="https://www.researchgate.net/profile/Sergei-Prokhorenko/publication/354697530_Freestanding_Ferroelectric_Bubble_Domains/links/6149d315a595d06017df3f5b/Freestanding-Ferroelectric-Bubble-Domains.pdf" style="color: #285095; text-decoration: none">paper</a>]
-
- <!-- <p class="small">
- <span style="font-weight:800"> <a href="https://arxiv.org/abs/1608.06936" style="font-size: 12pt; color: #285095; text-decoration: none"> A Simple Setup to Measure Muon Lifetime and Electron Energy Spectrum of Muon Decay and its Monte Carlo Simulation</a> <br> </span>
- <span style="line-height:170%"> <b>Yushi Hu</b>, Tianye Wang, Yefeng Mei, Zhao Zhang, Chuangang Ning</span>
- <br>
- <span style="line-height:170%"> <i>物理与工程, 2016.05</i> </span>
- <br>
-[<a href="https://arxiv.org/pdf/1608.06936" style="color: #285095; text-decoration: none">English version preprint</a>] -->
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
 
 
 
@@ -291,10 +520,10 @@ Valanoor</span>
  <hr>
 
   <ul class="small">
-<li> Student Researcher, Google, Mountain View, CA, summer 2023</li>
+<li> Student Researcher, Allen Institute for AI, Seattle, WA, 2024</li>
+<li> Student Researcher, Google Research, Mountain View, CA, summer 2023</li>
 <li> Research Intern, Tencent AI Lab (Seattle), Bellevue, WA, summer 2022</li>
- <li> Research Assistant, Toyota Technological Institute at Chicago, Chicago, IL, 2019 - 2021</li>
- <li> Machine Learning Engineer Intern, Learnable.ai, Boston, MA, summer 2019</li>
+ <li> Research Assistant, Toyota Technological Institute at Chicago (TTIC), Chicago, IL, 2019 - 2021</li>
  <li> Research Intern, Argonne National Laboratory, Lemont, IL, summer 2018</li>
 </ul>
 
