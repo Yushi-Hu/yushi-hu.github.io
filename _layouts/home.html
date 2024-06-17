@@ -98,8 +98,7 @@
    Previously, I have also interned at <a href="https://research.google/" style="color: #57068C; text-decoration: none">Google Research</a> and <a href="https://ai.tencent.com/ailab/en/index/" style="color: #57068C; text-decoration: none">Tencent AI</a>.
 <br><br>
    My research primarily focuses on multimodal models (e.g., multimodal LLMs, image/3D/video generation models), at the intersection of natural language processing (NLP), computer vision (CV), and machine learning (ML).
-   My goal is to build models that are grounded in the multimodal world, capable of learning through interactions with humans, AIs, and the environment.
-   I build evaluations that identify the critical weaknesses of existing models, and develop better supervision (e.g., human/AI feedback, self-training strategies) to train better models.
+    I am interested in developing better evaluations, supervision signals, and training techniques for these models.
 <br><br>
   Prior to that, I graduated from the University of Chicago with B.S. in Mathematics, Computer Science, and Economics in 2021,
   where I was fortunate to be advised by Prof. <a href="https://ttic.uchicago.edu/~klivescu/" style="color: #57068C; text-decoration: none">Karen Livescu</a> at <a href="https://www.ttic.edu/" style="color: #57068C; text-decoration: none">Toyota Technological Institute at Chicago (TTIC)</a>.
@@ -135,7 +134,18 @@ and Prof. <a href="http://info.phys.tsinghua.edu.cn/henucl/ning.htm" style="colo
 <!-- Tab content for Selected Publications -->
 <div id="Selected" class="tabcontent">
 
-    <h4>Better Evaluation for Multimodal Generative Models</h4>
+    <h4>On Multimodal Large Language Models</h4>
+
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2404.12390"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models </a> <br> </span>
+        <span style="line-height:170%"> <b>Yushi Hu*</b>, Weijia Shi*, Xingyu Fu, Dan Roth, Mari Ostendorf, Luke Zettlemoyer, Noah A. Smith, Ranjay Krishna</span>
+        <br>
+        <span style="line-height:170%"> <i>preprint</i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2406.09403" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://visualsketchpad.github.io/" style="color: #285095; text-decoration: none">project page</a>]
+
 
     <p class="small">
         <span style="font-weight:800"> <a href="https://arxiv.org/abs/2404.12390"
@@ -148,6 +158,36 @@ and Prof. <a href="http://info.phys.tsinghua.edu.cn/henucl/ning.htm" style="colo
         [<a href="https://zeyofu.github.io/blink/" style="color: #285095; text-decoration: none">project page</a>]
         [<a href="https://github.com/zeyofu/BLINK_Benchmark" style="color: #285095; text-decoration: none">code</a>]
         [<a href="https://huggingface.co/datasets/BLINK-Benchmark/BLINK" style="color: #285095; text-decoration: none">HF data</a>]
+
+
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2312.03052"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> Visual Program Distillation:
+                Distilling Tools and Programmatic Reasoning into Vision-Language Models </a> <br> </span>
+        <span style="line-height:170%"> <b>Yushi Hu</b>, Otilia Stretcu, Chun-Ta Lu, Krishnamurthy Viswanathan, Kenji Hata,
+            Enming Luo, Ranjay Krishna, Ariel Fuxman</span>
+        <br>
+        <span style="line-height:170%"> <i>CVPR 2024 <span style="color: red">(Oral)</span></i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2312.03052" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://visual-program-distillation.github.io/" style="color: #285095; text-decoration: none">project
+            page</a>]
+    
+    <p class="small">
+        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2306.01693"
+                style="font-size: 12pt; color: #285095; text-decoration: none"> Fine-Grained Human Feedback Gives Better
+                Rewards for Language Model Training </a> <br> </span>
+        <span style="line-height:170%"> Zeqiu Wu*, <b>Yushi Hu*</b>, Weijia Shi, Nouha Dziri, Alane Suhr, Prithviraj
+            Ammanabrolu, Noah A. Smith, Mari Ostendorf, Hannaneh Hajishirzi</span>
+        <br>
+        <span style="line-height:170%"> <i>NeurIPS 2023 <span style="color: red">(Spotlight)</span></i> </span>
+        <br>
+        [<a href="https://arxiv.org/abs/2306.01693" style="color: #285095; text-decoration: none">paper</a>]
+        [<a href="https://FineGrainedRLHF.github.io/" style="color: #285095; text-decoration: none">project page</a>]
+        [<a href="https://github.com/allenai/FineGrainedRLHF" style="color: #285095; text-decoration: none">code & data</a>]
+
+    
+     <h4>On Image/3D/Video Generation</h4>
 
 
     <p class="small">
@@ -179,34 +219,6 @@ and Prof. <a href="http://info.phys.tsinghua.edu.cn/henucl/ning.htm" style="colo
         [<a href="https://github.com/j-min/DSG" style="color: #285095; text-decoration: none">code & data</a>]
 
 
-    <h4>Better Supervision for Multimodal Model Training</h4>
-
-        <p class="small">
-            <span style="font-weight:800"> <a href="https://arxiv.org/abs/2312.03052"
-                    style="font-size: 12pt; color: #285095; text-decoration: none"> Visual Program Distillation:
-                    Distilling Tools and Programmatic Reasoning into Vision-Language Models </a> <br> </span>
-            <span style="line-height:170%"> <b>Yushi Hu</b>, Otilia Stretcu, Chun-Ta Lu, Krishnamurthy Viswanathan, Kenji Hata,
-                Enming Luo, Ranjay Krishna, Ariel Fuxman</span>
-            <br>
-            <span style="line-height:170%"> <i>CVPR 2024 <span style="color: red">(Oral)</span></i> </span>
-            <br>
-            [<a href="https://arxiv.org/abs/2312.03052" style="color: #285095; text-decoration: none">paper</a>]
-            [<a href="https://visual-program-distillation.github.io/" style="color: #285095; text-decoration: none">project
-                page</a>]
-    
-        <p class="small">
-            <span style="font-weight:800"> <a href="https://arxiv.org/abs/2306.01693"
-                    style="font-size: 12pt; color: #285095; text-decoration: none"> Fine-Grained Human Feedback Gives Better
-                    Rewards for Language Model Training </a> <br> </span>
-            <span style="line-height:170%"> Zeqiu Wu*, <b>Yushi Hu*</b>, Weijia Shi, Nouha Dziri, Alane Suhr, Prithviraj
-                Ammanabrolu, Noah A. Smith, Mari Ostendorf, Hannaneh Hajishirzi</span>
-            <br>
-            <span style="line-height:170%"> <i>NeurIPS 2023 <span style="color: red">(Spotlight)</span></i> </span>
-            <br>
-            [<a href="https://arxiv.org/abs/2306.01693" style="color: #285095; text-decoration: none">paper</a>]
-            [<a href="https://FineGrainedRLHF.github.io/" style="color: #285095; text-decoration: none">project page</a>]
-            [<a href="https://github.com/allenai/FineGrainedRLHF" style="color: #285095; text-decoration: none">code & data</a>]
-
 
     <p class="small">
         <span style="font-weight:800"> <a href="https://arxiv.org/abs/2311.17946"
@@ -220,12 +232,23 @@ and Prof. <a href="http://info.phys.tsinghua.edu.cn/henucl/ning.htm" style="colo
         <br>
         [<a href="https://arxiv.org/abs/2311.17946" style="color: #285095; text-decoration: none">paper</a>]
     
-    
 
 </div>
 
 <!-- Tab content for All Publications -->
 <div id="All" class="tabcontent">
+
+        <p class="small">
+            <span style="font-weight:800"> <a href="https://arxiv.org/abs/2404.12390"
+                    style="font-size: 12pt; color: #285095; text-decoration: none"> Visual Sketchpad: Sketching as a Visual
+                    Chain of Thought for Multimodal Language Models </a> <br> </span>
+            <span style="line-height:170%"> <b>Yushi Hu*</b>, Weijia Shi*, Xingyu Fu, Dan Roth, Mari Ostendorf, Luke
+                Zettlemoyer, Noah A. Smith, Ranjay Krishna</span>
+            <br>
+            <span style="line-height:170%"> <i>preprint</i> </span>
+            <br>
+            [<a href="https://arxiv.org/abs/2406.09403" style="color: #285095; text-decoration: none">paper</a>]
+            [<a href="https://visualsketchpad.github.io/" style="color: #285095; text-decoration: none">project page</a>]
 
         <p class="small">
             <span style="font-weight:800"> <a href="https://arxiv.org/abs/2404.1239"
