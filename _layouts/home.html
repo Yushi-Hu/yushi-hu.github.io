@@ -82,6 +82,30 @@
      font-size: 12pt;
  }
 
+ .pub-entry {
+     display: flex;
+     align-items: flex-start;
+     margin-bottom: 20px;
+     gap: 20px;
+ }
+
+ .pub-image {
+     flex-shrink: 0;
+     width: 140px;
+ }
+
+ .pub-image img {
+     width: 140px;
+     height: auto;
+     border-radius: 4px;
+     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+ }
+
+ .pub-text {
+     flex: 1;
+     line-height: 1.55;
+     font-size: 11pt;
+ }
 
  </style>
  </head>
@@ -170,93 +194,128 @@ and Prof. <a href="http://info.phys.tsinghua.edu.cn/henucl/ning.htm" style="colo
 <span style="font-size: 10pt">* indicates equal contribution</span>
  <hr>
 
-    <p class="small">
-        <span style="font-weight:800"> <a href="https://github.com/facebookresearch/MMRB2"
-                style="font-size: 12pt; color: #285095; text-decoration: none"> Multimodal RewardBench 2: Evaluating Omni Reward Models for Interleaved Text and Image </a> <br> </span>
-        <span style="line-height:170%"> <b>Yushi Hu*</b>, Reyhane Askari-Hemmat*, Melissa Hall, Emily Dinan, Luke Zettlemoyer, Marjan Ghazvininejad</span>
-        <br>
-        <span style="line-height:170%"> <i>Preprint 2025</i> </span>
-        <br>
-        [<a href="https://github.com/facebookresearch/MMRB2" style="color: #285095; text-decoration: none">code & data</a>]
-        <br>
-        <span style="color: #666; font-size: 10pt;"><b>TLDR:</b> A benchmark for reward models that advance SOTA omni models (e.g., Nano Banana).</span>
+    <div class="pub-entry">
+        <div class="pub-image">
+            <img src="images/MMRB.jpg" alt="MMRB2">
+        </div>
+        <div class="pub-text">
+            <span style="font-weight:800"> <a href="https://github.com/facebookresearch/MMRB2"
+                    style="font-size: 12pt; color: #285095; text-decoration: none"> Multimodal RewardBench 2: Evaluating Omni Reward Models for Interleaved Text and Image </a> <br> </span>
+            <span style="line-height:170%"> <b>Yushi Hu*</b>, Reyhane Askari-Hemmat*, Melissa Hall, Emily Dinan, Luke Zettlemoyer, Marjan Ghazvininejad</span>
+            <br>
+            <span style="line-height:170%"> <i>Preprint 2025</i> </span>
+            <br>
+            [<a href="https://github.com/facebookresearch/MMRB2" style="color: #285095; text-decoration: none">code & data</a>]
+            <br>
+            <span style="color: #666; font-size: 10pt;"><b>TLDR:</b> A benchmark for reward models that advance SOTA omni models (e.g., Nano Banana).</span>
+        </div>
+    </div>
 
 
-    <p class="small">
-        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2406.09403"
-                style="font-size: 12pt; color: #285095; text-decoration: none"> Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models </a> <br> </span>
-        <span style="line-height:170%"> <b>Yushi Hu*</b>, Weijia Shi*, Xingyu Fu, Dan Roth, Mari Ostendorf, Luke Zettlemoyer, Noah A. Smith, Ranjay Krishna</span>
-        <br>
-        <span style="line-height:170%"> <i>NeurIPS 2024</i> </span>
-        <br>
-        [<a href="https://arxiv.org/abs/2406.09403" style="color: #285095; text-decoration: none">paper</a>]
-        [<a href="https://github.com/Yushi-Hu/VisualSketchpad" style="color: #285095; text-decoration: none">code</a>]
-        [<a href="https://visualsketchpad.github.io/" style="color: #285095; text-decoration: none">project page</a>]
-        <br>
-        <span style="color: #666; font-size: 10pt;"><b>TLDR:</b> Proposes "thinking with images." Enables multimodal LLMs to generate images during reasoning, improving math, vision, and spatial reasoning tasks.</span>
+    <div class="pub-entry">
+        <div class="pub-image">
+            <img src="images/sketchpad.jpg" alt="Visual Sketchpad">
+        </div>
+        <div class="pub-text">
+            <span style="font-weight:800"> <a href="https://arxiv.org/abs/2406.09403"
+                    style="font-size: 12pt; color: #285095; text-decoration: none"> Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models </a> <br> </span>
+            <span style="line-height:170%"> <b>Yushi Hu*</b>, Weijia Shi*, Xingyu Fu, Dan Roth, Mari Ostendorf, Luke Zettlemoyer, Noah A. Smith, Ranjay Krishna</span>
+            <br>
+            <span style="line-height:170%"> <i>NeurIPS 2024</i> </span>
+            <br>
+            [<a href="https://arxiv.org/abs/2406.09403" style="color: #285095; text-decoration: none">paper</a>]
+            [<a href="https://github.com/Yushi-Hu/VisualSketchpad" style="color: #285095; text-decoration: none">code</a>]
+            [<a href="https://visualsketchpad.github.io/" style="color: #285095; text-decoration: none">project page</a>]
+            <br>
+            <span style="color: #666; font-size: 10pt;"><b>TLDR:</b> Proposes "thinking with images." Enables multimodal LLMs to generate images during reasoning, improving math, vision, and spatial reasoning tasks.</span>
+        </div>
+    </div>
 
 
-    <p class="small">
-        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2404.12390"
-                style="font-size: 12pt; color: #285095; text-decoration: none"> BLINK: Multimodal Large Language Models Can See but Not Percieve </a> <br> </span>
-        <span style="line-height:170%"> Xingyu Fu*, <b>Yushi Hu*</b>, Bangzheng Li, Yu Feng, Haoyu Wang, Xudong Lin, Dan Roth, Noah A. Smith, Wei-Chiu Ma, Ranjay Krishna</span>
-        <br>
-        <span style="line-height:170%"> <i>ECCV 2024</i> </span>
-        <br>
-        [<a href="https://arxiv.org/abs/2404.12390" style="color: #285095; text-decoration: none">paper</a>]
-        [<a href="https://zeyofu.github.io/blink/" style="color: #285095; text-decoration: none">project page</a>]
-        [<a href="https://github.com/zeyofu/BLINK_Benchmark" style="color: #285095; text-decoration: none">code</a>]
-        [<a href="https://huggingface.co/datasets/BLINK-Benchmark/BLINK" style="color: #285095; text-decoration: none">HF data</a>]
-        <br>
-        <span style="color: #666; font-size: 10pt;"><b>TLDR:</b> A benchmark revealing that multimodal LLMs struggle with core visual perception tasks that humans find trivial.</span>
+    <div class="pub-entry">
+        <div class="pub-image">
+            <img src="images/blink.png" alt="BLINK">
+        </div>
+        <div class="pub-text">
+            <span style="font-weight:800"> <a href="https://arxiv.org/abs/2404.12390"
+                    style="font-size: 12pt; color: #285095; text-decoration: none"> BLINK: Multimodal Large Language Models Can See but Not Percieve </a> <br> </span>
+            <span style="line-height:170%"> Xingyu Fu*, <b>Yushi Hu*</b>, Bangzheng Li, Yu Feng, Haoyu Wang, Xudong Lin, Dan Roth, Noah A. Smith, Wei-Chiu Ma, Ranjay Krishna</span>
+            <br>
+            <span style="line-height:170%"> <i>ECCV 2024</i> </span>
+            <br>
+            [<a href="https://arxiv.org/abs/2404.12390" style="color: #285095; text-decoration: none">paper</a>]
+            [<a href="https://zeyofu.github.io/blink/" style="color: #285095; text-decoration: none">project page</a>]
+            [<a href="https://github.com/zeyofu/BLINK_Benchmark" style="color: #285095; text-decoration: none">code</a>]
+            [<a href="https://huggingface.co/datasets/BLINK-Benchmark/BLINK" style="color: #285095; text-decoration: none">HF data</a>]
+            <br>
+            <span style="color: #666; font-size: 10pt;"><b>TLDR:</b> A benchmark revealing that multimodal LLMs struggle with core visual perception tasks that humans find trivial.</span>
+        </div>
+    </div>
 
 
-    <p class="small">
-        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2312.03052"
-                style="font-size: 12pt; color: #285095; text-decoration: none"> Visual Program Distillation:
-                Distilling Tools and Programmatic Reasoning into Vision-Language Models </a> <br> </span>
-        <span style="line-height:170%"> <b>Yushi Hu</b>, Otilia Stretcu, Chun-Ta Lu, Krishnamurthy Viswanathan, Kenji Hata,
-            Enming Luo, Ranjay Krishna, Ariel Fuxman</span>
-        <br>
-        <span style="line-height:170%"> <i>CVPR 2024 <span style="color: red">(Oral)</span></i> </span>
-        <br>
-        [<a href="https://arxiv.org/abs/2312.03052" style="color: #285095; text-decoration: none">paper</a>]
-        [<a href="https://visual-program-distillation.github.io/" style="color: #285095; text-decoration: none">project
-            page</a>]
-        <br>
-        <span style="color: #666; font-size: 10pt;"><b>TLDR:</b> Distills tool usage and programmatic reasoning from visual programs into end-to-end vision-language models.</span>
+    <div class="pub-entry">
+        <div class="pub-image">
+            <img src="images/visualprogramdistillation.jpg" alt="Visual Program Distillation">
+        </div>
+        <div class="pub-text">
+            <span style="font-weight:800"> <a href="https://arxiv.org/abs/2312.03052"
+                    style="font-size: 12pt; color: #285095; text-decoration: none"> Visual Program Distillation:
+                    Distilling Tools and Programmatic Reasoning into Vision-Language Models </a> <br> </span>
+            <span style="line-height:170%"> <b>Yushi Hu</b>, Otilia Stretcu, Chun-Ta Lu, Krishnamurthy Viswanathan, Kenji Hata,
+                Enming Luo, Ranjay Krishna, Ariel Fuxman</span>
+            <br>
+            <span style="line-height:170%"> <i>CVPR 2024 <span style="color: red">(Oral)</span></i> </span>
+            <br>
+            [<a href="https://arxiv.org/abs/2312.03052" style="color: #285095; text-decoration: none">paper</a>]
+            [<a href="https://visual-program-distillation.github.io/" style="color: #285095; text-decoration: none">project page</a>]
+            <br>
+            <span style="color: #666; font-size: 10pt;"><b>TLDR:</b> Distills tool usage and programmatic reasoning from visual programs into end-to-end vision-language models.</span>
+        </div>
+    </div>
     
-    <p class="small">
-        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2306.01693"
-                style="font-size: 12pt; color: #285095; text-decoration: none"> Fine-Grained Human Feedback Gives Better
-                Rewards for Language Model Training </a> <br> </span>
-        <span style="line-height:170%"> Zeqiu Wu*, <b>Yushi Hu*</b>, Weijia Shi, Nouha Dziri, Alane Suhr, Prithviraj
-            Ammanabrolu, Noah A. Smith, Mari Ostendorf, Hannaneh Hajishirzi</span>
-        <br>
-        <span style="line-height:170%"> <i>NeurIPS 2023 <span style="color: red">(Spotlight)</span></i> </span>
-        <br>
-        [<a href="https://arxiv.org/abs/2306.01693" style="color: #285095; text-decoration: none">paper</a>]
-        [<a href="https://FineGrainedRLHF.github.io/" style="color: #285095; text-decoration: none">project page</a>]
-        [<a href="https://github.com/allenai/FineGrainedRLHF" style="color: #285095; text-decoration: none">code & data</a>]
-        <br>
-        <span style="color: #666; font-size: 10pt;"><b>TLDR:</b> Fine-grained feedback on sub-sentences enables better reward models and more effective RLHF training.</span>
+    <div class="pub-entry">
+        <div class="pub-image">
+            <img src="images/finegrainedrlhf.png" alt="Fine-Grained RLHF">
+        </div>
+        <div class="pub-text">
+            <span style="font-weight:800"> <a href="https://arxiv.org/abs/2306.01693"
+                    style="font-size: 12pt; color: #285095; text-decoration: none"> Fine-Grained Human Feedback Gives Better
+                    Rewards for Language Model Training </a> <br> </span>
+            <span style="line-height:170%"> Zeqiu Wu*, <b>Yushi Hu*</b>, Weijia Shi, Nouha Dziri, Alane Suhr, Prithviraj
+                Ammanabrolu, Noah A. Smith, Mari Ostendorf, Hannaneh Hajishirzi</span>
+            <br>
+            <span style="line-height:170%"> <i>NeurIPS 2023 <span style="color: red">(Spotlight)</span></i> </span>
+            <br>
+            [<a href="https://arxiv.org/abs/2306.01693" style="color: #285095; text-decoration: none">paper</a>]
+            [<a href="https://FineGrainedRLHF.github.io/" style="color: #285095; text-decoration: none">project page</a>]
+            [<a href="https://github.com/allenai/FineGrainedRLHF" style="color: #285095; text-decoration: none">code & data</a>]
+            <br>
+            <span style="color: #666; font-size: 10pt;"><b>TLDR:</b> Fine-grained feedback on sub-sentences enables better reward models and more effective RLHF training.</span>
+        </div>
+    </div>
 
 
-    <p class="small">
-        <span style="font-weight:800"> <a href="https://arxiv.org/abs/2303.11897"
-                style="font-size: 12pt; color: #285095; text-decoration: none"> TIFA: Accurate and Interpretable
-                Text-to-Image Faithfulness Evaluation with Question Answering </a> <br> </span>
-        <span style="line-height:170%"> <b>Yushi Hu</b>, Benlin Liu, Jungo Kasai, Yizhong Wang, Mari Ostendorf, Ranjay
-            Krishna, Noah A. Smith</span>
-        <br>
-        <span style="line-height:170%"> <i>ICCV 2023</i> </span>
-        <br>
-        [<a href="https://arxiv.org/abs/2303.11897" style="color: #285095; text-decoration: none">paper</a>]
-        [<a href="https://tifa-benchmark.github.io/" style="color: #285095; text-decoration: none">project page</a>]
-        [<a href="https://github.com/Yushi-Hu/tifa" style="color: #285095; text-decoration: none">code & data</a>]
-        [<a href="../misc/TIFA_poster_new.pdf" style="color: #285095; text-decoration: none">poster</a>]
-        <br>
-        <span style="color: #666; font-size: 10pt;"><b>TLDR:</b> The first paper proposing to evaluate image generation with multimodal LLMs. </span>
+    <div class="pub-entry">
+        <div class="pub-image">
+            <img src="images/tifa.png" alt="TIFA">
+        </div>
+        <div class="pub-text">
+            <span style="font-weight:800"> <a href="https://arxiv.org/abs/2303.11897"
+                    style="font-size: 12pt; color: #285095; text-decoration: none"> TIFA: Accurate and Interpretable
+                    Text-to-Image Faithfulness Evaluation with Question Answering </a> <br> </span>
+            <span style="line-height:170%"> <b>Yushi Hu</b>, Benlin Liu, Jungo Kasai, Yizhong Wang, Mari Ostendorf, Ranjay
+                Krishna, Noah A. Smith</span>
+            <br>
+            <span style="line-height:170%"> <i>ICCV 2023</i> </span>
+            <br>
+            [<a href="https://arxiv.org/abs/2303.11897" style="color: #285095; text-decoration: none">paper</a>]
+            [<a href="https://tifa-benchmark.github.io/" style="color: #285095; text-decoration: none">project page</a>]
+            [<a href="https://github.com/Yushi-Hu/tifa" style="color: #285095; text-decoration: none">code & data</a>]
+            [<a href="misc/TIFA_poster_new.pdf" style="color: #285095; text-decoration: none">poster</a>]
+            <br>
+            <span style="color: #666; font-size: 10pt;"><b>TLDR:</b> The first paper proposing to evaluate image generation with multimodal LLMs. </span>
+        </div>
+    </div>
 
 
 
