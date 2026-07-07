@@ -96,7 +96,7 @@ author:
   name             : "Yushi Hu 胡雨石"
   avatar           : "images/bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : " " # descrption
-  location         : "Seattle, WA"
+  location         : "Menlo Park, CA"
   email            :
   links:
     - label: "Email"
